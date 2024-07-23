@@ -1,3 +1,4 @@
+<h2 align = "center"> 1. DataBase </h2>
 
 ### 1. Create a Database and Table for Employees
 CREATE TABLE employees (
