@@ -1,6 +1,6 @@
 <h2 align = "center"> 1. DataBase </h2>
 
-### 1. Create a Database and Table for Employees`
+### 1. Create a Database and Table for Employes`
 ```sql
 CREATE TABLE employes (
     id INTEGER PRIMARY KEY,
@@ -12,51 +12,51 @@ CREATE TABLE employes (
     phone TEXT NOT NULL
 );
 ```
-### 2. Add a New Employee with All Details
+### 2. Add a New Employe with All Details
 ```sql
-INSERT INTO employees (id, name, role, salary, age, address, phone) 
+INSERT INTO employes (id, name, role, salary, age, address, phone) 
 VALUES (100, 'Fenish Patel', 'Student', 10000, 18, '123 xyz', '6353600958');
 ```
-### 3. Add Multiple Employees with Selective Data
+### 3. Add Multiple Employes with Selective Data
 ```sql
-INSERT INTO employees (name, role, salary, age, address, phone) 
+INSERT INTO employes (name, role, salary, age, address, phone) 
 VALUES 
 ('Fenish Patel', 'Student', 10000, 18, '123 xyz ', '6353600958'),
 ('Darshan', 'Student', 10000, 18, '123 xyz', '6353600958');
 ```
-### 4. Retrieve All Employee Information
+### 4. Retrieve All Employe Information
 ```sql
-SELECT * FROM employees;
+SELECT * FROM employes;
 ```
 ### 5. Get Specific Columns for All Employees (e.g., name, salary)
 ```sql
 SELECT name, salary FROM employees;
 ```
-### 6. Find Employees with a Specific Role (e.g., Manager)
+### 6. Find Employes with a Specific Role (e.g., Manager)
 ```sql
 SELECT * FROM employees WHERE role = 'Manager';
 ```
-### 7. Search for Employees with Names Containing "An" (Case-Insensitive)
+### 7. Search for Employes with Names Containing "An" (Case-Insensitive)
 ```sql
-SELECT * FROM employees WHERE name LIKE '%An%' COLLATE NOCASE;
+SELECT * FROM employes WHERE name LIKE '%An%' COLLATE NOCASE;
 ```
-### 8. Find Employees Older than 30 and Earning More than $70,000
+### 8. Find Employes Older than 30 and Earning More than $70,000
 ```sql
-SELECT * FROM employees WHERE age > 30 AND salary > 70000;
+SELECT * FROM employes WHERE age > 30 AND salary > 70000;
 ```
-### 9. Change the Salary of an Employee with ID 100
+### 9. Change the Salary of an Employe with ID 100
 ```sql
 UPDATE employe SET salary = 10000 WHERE id = 1;
 ```
-### 10. Update the Address for Employees in the 'Sales' Role
+### 10. Update the Address for Employes in the 'Sales' Role
 ```sql
-UPDATE employees SET address = 'New Sales Office, Springfield' WHERE role = 'Sales';
+UPDATE employes SET address = 'New Sales Office, Springfield' WHERE role = 'Sales';
 ```
-### 11. Remove an Employee with ID 101
+### 11. Remove an Employe with ID 101
 ```sql
-DELETE FROM employees WHERE id = 1;
+DELETE FROM employes WHERE id = 1;
 ```
-### 12. Delete All Employees with Age Less than 20
+### 12. Delete All Employes with Age Less than 20
 ```sql
-DELETE FROM employees WHERE age < 20;
+DELETE FROM employes WHERE age < 20;
 ```
