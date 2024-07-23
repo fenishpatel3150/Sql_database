@@ -2,7 +2,7 @@
 
 ### 1. Create a Database and Table for Employees`
 ```sql
-CREATE TABLE employees (
+CREATE TABLE employes (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     role TEXT NOT NULL,
