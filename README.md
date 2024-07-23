@@ -53,7 +53,7 @@ UPDATE employees SET address = 'New Sales Office, Springfield' WHERE role = 'Sal
 
 ### 11. Remove an Employee with ID 101
 
-DELETE FROM employees WHERE id = 101;
+DELETE FROM employees WHERE id = 1;
 
 ### 12. Delete All Employees with Age Less than 20
 
